@@ -5,22 +5,21 @@ int main(){
     scanf("%d",&n);
     printf("enter element");
             int arr[n];
-                int max=arr[i];
-            int min=arr[i];
     for(i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    if(arr[i]>max){
-        for(i=0;i<n;i++)
-        arr[i]=max;
-        printf("max element is ",arr[i]);
-    }else{
-        if(arr[i]<min){
-                    for(i=0;i<n;i++){
-
-            arr[i]=min;}
-            printf("min element is",arr[i]);
-        }
-
+                int max=arr[0];
+                int min=arr[0];
+      for (i=0;i<n;i++){
+       if( arr[i]>max){
+            max=arr[i];
+       }
+           if(arr[i]<min){
+            min=arr[i];
+           }
+           
     }
+        printf("max element is %d\n",max);
+     printf("minimum element is %d",min);
 }
+
