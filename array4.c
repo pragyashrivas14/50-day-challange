@@ -6,10 +6,21 @@ int main(){
     int arr[n];
     printf("enter element ");
     for(i=0;i<n;i++){
-        scanf("%d",arr[i]);
+        scanf("%d",&arr[i]);
     }
-            for(i=0;i<n;i++){
-    if(arr[i]<0)
+    for(i=0;i<n;i++){
+    if(arr[i]<0){
+        printf(" after rearranging  array %d",arr[i]);
+    }
+}
     
+    for(i=0;i<n;i++){
+    if(arr[i]>0){
+        printf("%d",arr[i]);
+    }
+    
+            }
+
 
 }
+    
